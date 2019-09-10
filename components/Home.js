@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux'
 import NewsItems from '../containers/NewsItems'
 import { getNews } from '../actions'
 
-
+//sử dụng họok thay vì dùng connect của redux 
 const Home = () =>{
   const dispatch = useDispatch();
   dispatch({ type: 'GET_NEWS' })
@@ -13,7 +13,7 @@ const Home = () =>{
 export default Home
 
 
-
+//Phần này kết quả tương tự fuction bên trên nhưng không sử dụng hook.
 // class Home extends React.Component {
 //   componentDidMount() {
 //     this.props.getNews()
